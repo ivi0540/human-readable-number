@@ -136,6 +136,8 @@ module.exports = function toReadable(number) {
     };
 
     if (str.length === 3) {
-        return (hundreds(str[0]) + " " + twoCharacters(str.slice(1)));
+        let newStr = "";
+        newStr = hundreds(str[0]) + " " + twoCharacters(str.slice(1));
+        return newStr.trim();
     };
 }
